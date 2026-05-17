@@ -1,0 +1,2 @@
+# Redirects are handled by Wrangler's not_found_handling: single-page-application
+# HTTP->HTTPS and www->apex are managed at the Cloudflare DNS/SSL level
