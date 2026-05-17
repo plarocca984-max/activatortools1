@@ -8,18 +8,16 @@
 
     <!-- Security headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
-    <meta http-equiv="X-Frame-Options" content="DENY" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()" />
     <meta http-equiv="Content-Security-Policy"
       content="default-src 'self';
-               script-src 'self' 'unsafe-inline' https://www.googletagmanager.com;
+               script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://static.cloudflareinsights.com;
                style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
                font-src 'self' https://fonts.gstatic.com;
-               img-src 'self' data: https://www.googletagmanager.com;
-               connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net;
+               img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com;
+               connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://region1.google-analytics.com https://static.cloudflareinsights.com https://cloudflareinsights.com;
                frame-src https://www.googletagmanager.com;
-               frame-ancestors 'none';
                base-uri 'self';
                form-action 'self' https://t.me;" />
 
@@ -28,6 +26,15 @@
     <meta property="og:title" content="Activator.Tools Download Center" />
     <meta property="og:description" content="Professional ramdisk tool for A7-A17. Windows &amp; macOS native builds." />
     <meta property="og:type" content="website" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1580YWCX1R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1580YWCX1R');
+    </script>
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
